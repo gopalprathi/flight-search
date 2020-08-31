@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.d-grid{
+  display: grid;
+}
+
+.solid-border{
+  border: 1px solid #000;
+}
+
+.p-15{
+  padding: 15px;
+}
+
+.pt-15{
+  padding-top: 15px;
+}
+
+.pb-15{
+  padding-bottom: 15px;
+}
+
+.pl-15{
+  padding-left: 15px;
+}
+
+.pr-15{
+  padding-right: 15px;
+}
+
+.p-5{
+  padding: 5px;
+}
+
+.pt-5{
+  padding-top: 5px;
+}
+
+.pb-5{
+  padding-bottom: 5px;
+}
+
+.pl-5{
+  padding-left: 5px;
+}
+
+.pr-5{
+  padding-right: 5px;
+}
+
+.m-0{
+  margin: 0;
+}
+
+.m-5{
+  margin: 5px;
+}
+
+.m-10{
+  margin: 10px;
+}
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
+.m-15{
+  margin: 15px;
+}

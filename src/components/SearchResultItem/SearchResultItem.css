@@ -1,0 +1,14 @@
+.search-result-item{
+    grid-template-columns: minmax(80%, 180px) max-content;
+}
+
+.flight-book-btn{
+    align-self: center;
+    margin: 5px 0;
+}
+
+@media all and (max-width:767px){
+    .search-result-item{
+        grid-template-columns: 1fr;
+    }
+}

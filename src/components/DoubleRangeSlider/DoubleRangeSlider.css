@@ -1,0 +1,91 @@
+input[type=range] {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 150px;
+    margin: 0;
+    padding: 0 2px;
+    /* Add some L/R padding to ensure box shadow of handle is shown */
+    /* overflow: hidden; */
+    border: 0;
+    border-radius: 1px;
+    outline: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(grey), to(grey)) no-repeat center;
+    background: linear-gradient(grey, grey) no-repeat center;
+    /* Use a linear gradient to generate only the 2px height background */
+    background-size: 100% 2px;
+    pointer-events: none;
+  }
+  input[type=range]:active,
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    height: 21px;
+    width: 7px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+    margin: 5px 0;
+    /* Add some margin to ensure box shadow is shown */
+    cursor: pointer;
+    -webkit-appearance: none;
+            appearance: none;
+    pointer-events: all;
+    box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+  }
+
+  /* added */
+  input[type=range]#lower::before {
+    opacity: 1;
+    content: attr(value);
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: 40px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    background: #274684;
+    border-radius: 20px;
+}
+
+input[type=range]#upper::before {
+    opacity: 1;
+    content: attr(value);
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    background: #274684;
+    border-radius: 20px;
+}
+
+  .multi-range {
+    position: relative;
+    height: 80px;
+  }
+  .multi-range input[type=range] {
+    position: absolute;
+    bottom: 0;
+  }
+  .multi-range input[type=range]:nth-child(1)::-webkit-slider-thumb::before {
+    background-color: red;
+  }
+  .multi-range input[type=range]:nth-child(2) {
+    background: none;
+  }
+  .multi-range input[type=range]:nth-child(2)::-webkit-slider-thumb::before {
+    background-color: grey;
+  }
+
+  .multi-range-slider-heading{
+      margin: 5px;
+  }
