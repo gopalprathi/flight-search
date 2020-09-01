@@ -34,7 +34,7 @@ function App() {
         (parseInt(flight.fare.split(" ")[1]) >= minPrice &&
         parseInt(flight.fare.split(" ")[1]) <= maxPrice)
     );
-    setsearchResultData(filterResult);
+    filterResult.length&&searchResultData.length!==filterResult.length&&setsearchResultData(filterResult);
   };
 
   return (
